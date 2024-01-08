@@ -17,7 +17,6 @@ x = 4       # x is of type int
 x = "Sally" # x is now of type str
 print(x)
 
-
 '''
 Casting
 If you want to specify the data type of a variable, this can be done with casting.
