@@ -15,7 +15,7 @@ To create a class, use the keyword class:
 '''
 
 class myclass:
-    x = 5
+    x = 6
 
 '''
 Create Object-------------
