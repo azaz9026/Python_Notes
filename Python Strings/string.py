@@ -7,7 +7,6 @@ Strings in python are surrounded by either single quotation marks, or double quo
 
 You can display a string literal with the print() function:
 '''
-
 print("Hello")
 print('Hello')
 
