@@ -44,3 +44,29 @@ with open("data.text" , 'r') as file:
     print(file.read())
 
 
+# Write a Multiple line of data ---------------------------------------------
+
+line  = ['line1 \n' , 'line2 \n' , 'line3 \n']
+
+with open('text_line.text' , 'w') as file:
+    file.writelines(line)
+
+with open('text_line.text' , 'r') as file:
+    for lines in file.readlines():
+        print(lines)
+
+new_line = "\n this is a new line"
+
+with open('text_line.text' , 'a') as file:
+    file.write(new_line)
+
+with open('text_line.text' , 'r') as file:
+    for lines in file.readlines():
+        print(lines)  
+
+
+# Reading a File ---------------------------------------------------------------
+
+with open("data.text" , 'r') as file:
+    print(file.read(10))
+    
