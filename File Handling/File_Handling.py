@@ -69,4 +69,16 @@ with open('text_line.text' , 'r') as file:
 
 with open("data.text" , 'r') as file:
     print(file.read(10))
-    
+
+
+with open("data.text" , 'r') as file:
+    print(file.read().split())   
+
+
+# Buffered read and write ------------------------------------------------------
+
+with open("testing.text" , 'w' , buffering= 2048) as file:
+    print(file.write(' this is some thing buffering '))
+
+with open("testing.text" , 'r' , buffering=2048) as file:
+    print(file.read())
