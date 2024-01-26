@@ -43,6 +43,14 @@ with open("data.text" , 'r+') as file:
 ## readable method -----------------------------------------------------------------------------------------------
 
 
-with open("data.text" , 'r+') as file:
+with open("data.text" , 'r') as file:
     print( f' this file is readable' , file.readable())
    
+
+with open("data.text" , 'r') as file:
+    print( f' this file is readable' , file.writable())
+
+
+with open("data.text" , 'r') as file:
+    print( f' this file is readable' , file.seekable())
+
