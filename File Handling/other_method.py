@@ -54,3 +54,44 @@ with open("data.text" , 'r') as file:
 with open("data.text" , 'r') as file:
     print( f' this file is readable' , file.seekable())
 
+
+## closed method ------------------------------------------------------------------------------------------------
+
+f = open("data.text" , 'r')
+print(f.read())
+f.close()
+
+
+## Tell method --------------------------------------------------------------------------------------------------
+
+
+f = open("data.text" , 'r')
+content = f.read()
+position = f.tell()
+print(f'{content} and it position is that {position}')
+f.close()
+
+
+## Seek method --------------------------------------------------------------------------------------------------
+
+
+f = open("data.text" , 'r')
+f.seek(1)
+content = f.read()
+position = f.tell()
+print(f'{content} and it position is that {position}')
+f.close()
+
+
+with open('data.text' , 'r+') as file:
+    file.truncate(1)
+    data = file.read()
+    print(data)
+
+
+with open('data.text' , 'r') as source , open('testing.text' , 'w') as destination:
+    destination.write(source.read())
+
+with open('testing.text' , 'r') as file:
+    cont = file.read()
+    print(cont)
