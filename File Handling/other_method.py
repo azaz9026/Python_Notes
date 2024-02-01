@@ -95,3 +95,20 @@ with open('data.text' , 'r') as source , open('testing.text' , 'w') as destinati
 with open('testing.text' , 'r') as file:
     cont = file.read()
     print(cont)
+
+
+## importing OS ---------------------------------------------------------------------------------------------------
+
+import os
+ 
+os.remove('data.text')
+
+if os.path.exists('data.text') :
+    print('yes')
+else:
+    print('no')
+
+
+file = os.stat('testing.text')
+
+print(file.st_size)
