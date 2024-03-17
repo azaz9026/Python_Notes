@@ -317,3 +317,49 @@ def greet(name , age , message):
   print(f'{message} {name} your age is {age}')
 
 greet(name='Azaz' , age=22 , message='Hello')
+
+
+
+# *args Argument  ---------------------------------------------------------------------------------------------------------------------------------------
+
+def sum_num(*args):
+  print(type(args))
+  print(args)
+
+  sum = 0
+  for i in args:
+    sum+=i
+  return sum
+
+
+
+print(sum_num(1,2,3,4,5))
+
+
+
+# **kwargs Argument  ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+def info(**kwargs):
+  print(type(kwargs))
+  print(kwargs)
+
+  for key , value in kwargs.items():
+    print(f'{key} --> {value} ')
+
+
+
+
+info(name = 'Azaz' , age = 22 , city = 'Kanpur')
+
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+def func1(a,b,*args , **kwargs):
+  print(a)
+  print(b)
+  print(args)
+  print(kwargs)
+
+func1(1,2,3,4,5, name = 'Azaz', age=22)
