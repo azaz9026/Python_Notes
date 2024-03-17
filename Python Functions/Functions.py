@@ -363,3 +363,28 @@ def func1(a,b,*args , **kwargs):
   print(kwargs)
 
 func1(1,2,3,4,5, name = 'Azaz', age=22)
+
+
+# -------------------------------------------------------------------
+
+
+def sums(a=int , b=int)->int:
+  print(a+b)
+
+
+sums(2,2)
+
+
+# -------------------------------------------------------------------------
+
+def fun_outer():
+  print('hello outer')
+
+  def fun_inner():
+    print('hello inner')
+    return(fun_outer)
+
+
+
+
+fun_outer()()
