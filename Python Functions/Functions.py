@@ -17,6 +17,15 @@ def my_function():
     print("Hello from a function")
 
 
+def myfun():
+  print(f'hello world')
+  
+myfun()
+
+
+
+
+
 
 '''
 Calling a Function ------------------------------------------------------------------------------------------------------------------------------
@@ -84,6 +93,16 @@ def my_function(fname, lname):
   print(fname + " " + lname)
 
 # my_function("Emil")
+
+
+def add(a, b):
+  sum = a+b
+  return sum
+
+
+print(add(2,2))
+
+
 
 
 '''
@@ -267,6 +286,9 @@ def tri_recursion(k):
 
 print("\n\nRecursion Example Results")
 tri_recursion(6)
+
+
+
 
 
 
