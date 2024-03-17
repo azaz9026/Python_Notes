@@ -288,7 +288,18 @@ print("\n\nRecursion Example Results")
 tri_recursion(6)
 
 
+# Global Variable / Scope --------------------------------------------------------------------------------------------------------------------------------------
 
+
+x = 101 # Global Scope
+
+
+def func():
+  x = 102 # Local Scope
+  print(x)
+
+func()
+print(x)
 
 
 
