@@ -302,5 +302,18 @@ func()
 print(x)
 
 
+# Default Argument --------------------------------------------------------------------------------------------------------------------------------------
+
+def greet(name , message = 'good morning'): # Default Argument : - {message = 'good morning'}
+  print(f'Hi my name was {name} and {message} and Lux')
 
 
+greet('Azaz')
+
+
+# keyword Argument
+
+def greet(name , age , message):
+  print(f'{message} {name} your age is {age}')
+
+greet(name='Azaz' , age=22 , message='Hello')
