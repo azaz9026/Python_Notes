@@ -82,3 +82,5 @@ with open("testing.text" , 'w' , buffering= 2048) as file:
 
 with open("testing.text" , 'r' , buffering=2048) as file:
     print(file.read())
+
+
