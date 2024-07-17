@@ -1,0 +1,4 @@
+Name: Alice, Age: 30, Salary: 50000
+Name: Bob, Age: 25, Salary: 45000
+Name: Charlie, Age: 35, Salary: 60000
+Name: David, Age: 28, Salary: 52000
