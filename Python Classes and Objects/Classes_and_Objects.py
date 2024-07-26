@@ -16,7 +16,6 @@ To create a class, use the keyword class:
 
 class myclass:
     x = 4
-
 '''
 Create Object-------------
 Now we can use the class named MyClass to create objects:
